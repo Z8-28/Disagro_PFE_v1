@@ -17,12 +17,13 @@
     <div class="screen">
         <form style="text-align: center;">
             <i class="fa-solid fa-user"></i><br><!--Icono de usuario-->
-            <input class="personal_input" type="text" id="username" name="username" placeholder="User Name"><br><!--Input de nombre de usuario-->
-            <input class="personal_input" type="password" id="password" name="password" placeholder="Password"><br><!--Input de la contraceña de usuario-->
-            <div id="loguin_container">
-                <i class="fa-solid fa-eye" id="eye" onclick="show_password()"></i><button onclick="login()">Login</button><br><!--Mostrar contraceña e iniciar secion respectivamente-->
+            <input class="personal_input" type="text" id="username" name="username" placeholder="New User Name"><br><!--Input de nombre de usuario-->
+            <input class="personal_input" type="password" id="password1" name="password1" placeholder="New Password"><br><!--Input de la contraceña de usuario-->
+            <input class="personal_input" type="password" id="password2" name="password2" placeholder="confirm Password"><br><!--Input de confirmacionla contraceña de usuario-->
+            <div id="new_acount_container">
+                <i class="fa-solid fa-eye" id="eye" onclick="show_all_passwords()"></i><button onclick="login()">Create Acount</button><br><!--Mostrar contraceña e iniciar secion respectivamente-->
             </div>
-            <button onclick="new_acount()">Create an acount</button><!--Crear una cuenta nueva-->
+            <button onclick="login_form()">Go To Login</button><!--Crear una cuenta nueva-->
         </form>
     </div>
 </body>
