@@ -48,3 +48,13 @@ function login_form(){
         window.location.href = "index.html";
     }, 0);
 }
+
+//Mostrar-Ocultar menu desplegable
+function menu_desplegable(){
+    var menu = document.getElementById("menu_desplegable");
+    if(menu.style.display == "block"){
+        menu.style.display = "none";
+    }else{
+        menu.style.display = "block";
+    }
+}
