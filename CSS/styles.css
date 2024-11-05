@@ -1,6 +1,7 @@
 body{
     margin: 0px;
     overflow-x: hidden ;
+    overflow-y: hidden ;
 }
 
 button{
@@ -158,6 +159,14 @@ p{
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
+}
+
+#menu_desplegable{
+    width: 20%;
+    height: 98%;
+    background-color: #1e5c37;
+    border: solid 10px #2E8D55;
+    border-radius: 20px;
 }
 
 #new_acount_container{
