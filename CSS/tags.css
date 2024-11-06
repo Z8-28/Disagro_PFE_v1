@@ -1,0 +1,28 @@
+body{
+    margin: 0px;
+    overflow-x: hidden ;
+    overflow-y: hidden ;
+}
+
+button{
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 82px;
+    background: linear-gradient(145deg, #31975b, #297f4d);
+    box-shadow: 2px 2px 3px #123822, 
+                -2px -2px 3px #4ae288;
+}
+
+button:hover{
+    color: black;
+    border-radius: 82px;
+    background: linear-gradient(145deg, #74d49c, #61b283);
+    box-shadow:  2px 2px 5px #2b4f3a,
+                -2px -2px 5px #adffea;
+}
+
+p{
+    font-size: 20px;
+}

@@ -1,0 +1,34 @@
+#disagro_logo{
+    max-height: 13vh;
+}
+
+#loguin_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+#menu_desplegable{
+    display: none;
+    animation-name: "despliegue_menu";
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+    /*animation: name duration timing-function delay iteration-count direction fill-mode;*/
+    width: 20%;
+    height: 98%;
+    background-color: #1e5c37;
+    border: solid 10px #2E8D55;
+    border-radius: 20px;
+}
+
+#new_acount_container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+}
+
+#usuario{
+    color: white
+}

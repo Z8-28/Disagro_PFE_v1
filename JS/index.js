@@ -53,8 +53,18 @@ function login_form(){
 function menu_desplegable(){
     var menu = document.getElementById("menu_desplegable");
     if(menu.style.display == "block"){
+        menu.style.animationPlayState=  "running";
+        menu.style.animationDirection= "reverse";
         menu.style.display = "none";
     }else{
-        menu.style.display = "block";
+        menu.style.display = "block"; 
+        menu.style.animationPlayState= "running";
+        menu.style.animationDirection= "normal";
+
     }
+}
+
+//Cierre de secion
+function logout(){
+    window.location.href = "index.html";
 }
