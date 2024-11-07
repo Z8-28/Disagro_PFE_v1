@@ -9,6 +9,7 @@
 }
 
 #menu_desplegable{
+    padding: 5px;
     display: none;
     animation-name: "despliegue_menu";
     animation-duration: 2s;
@@ -23,10 +24,25 @@
     border-radius: 20px;
 }
 
+#menu_desplegable_content{
+    overflow-y: auto;
+    overflow-x: auto;
+    /*direction: rtl;*/
+    margin: 5%;
+    width: 90%;
+    height: 95%;
+}
+
 #new_acount_container{
     display: grid;
     grid-template-columns: 1fr 2fr;
     width: 100%;
+}
+
+#screen_base{
+    display: flex;
+    width: 100%;
+    height: 84vh;
 }
 
 #usuario{
