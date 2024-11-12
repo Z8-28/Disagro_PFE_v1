@@ -10,14 +10,14 @@
 
 #menu_desplegable{
     padding: 5px;
-    display: none;
-    animation-name: "despliegue_menu";
+    animation-name: despliegue_menu;
     animation-duration: 2s;
-    animation-delay: 0.5s;
     animation-iteration-count: 1;
     animation-play-state: running;
-    /*animation: name duration timing-function delay iteration-count direction fill-mode;*/
-    width: 20%;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards; /* Mantiene el estado final de la animación */
+    animation-play-state: paused;
+    width: 0px;
     height: 98%;
     background-color: #1e5c37;
     border: solid 10px #2E8D55;
@@ -26,7 +26,7 @@
 
 #menu_desplegable_content{
     overflow-y: auto;
-    overflow-x: auto;
+    overflow-x: hidden;
     /*direction: rtl;*/
     margin: 5%;
     width: 90%;

@@ -10,16 +10,15 @@ document.addEventListener("DOMContentLoaded", function(){
 //Mostrar-Ocultar menu desplegable
 function menu_desplegable(){
     var menu = document.getElementById("menu_desplegable");
-    if(menu.style.display == "block"){
-        menu.style.animationPlayState=  "running";
-        menu.style.animationDirection= "reverse";
-        menu.style.display = "none";
-    }else{
-        menu.style.display = "block";
-        menu.style.animationPlayState= "running";
-        menu.style.animationDirection= "normal";
-
-    }
+    const isHidden = window.getComputedStyle(menu).width === '0px';
+    
+    // Pausar la animación y removerla momentáneamente
+    menu.style.animation = 'none';
+    menu.offsetHeight; // Forzar un reflow para "resetear" la animación
+    
+    // Configurar la animación nuevamente con la dirección deseada
+    menu.style.animation = 'despliegue_menu 1.5s forwards ease-out';
+    menu.style.animationDirection = isHidden ? 'normal' : 'reverse';
 }
 
 function init_option(x){
